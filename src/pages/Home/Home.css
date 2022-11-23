@@ -1,0 +1,43 @@
+.page-container {
+    padding-top: 2vh;
+}
+
+.promo-container {
+    background-color: var(--button-primary-color);
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* .book-carrousel-section {
+    margin-top: 3vh;
+    background-color: aqua;
+    height: 300px;
+    padding: 3vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.book-carrousel {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.book {
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    margin: 5px;
+} */
+

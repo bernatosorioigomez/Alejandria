@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.carousel-container {
+     /*TODO: Change in media query for every dispositive*/
+    
+    /* background: #ccc; */
+    min-height: 200px;
+    width: 100%;
+    /* width: 100%; */
+    position: relative;
+}
+
+.main-carousel-container {
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1050px) {
+    
+}
+
+.carousel-container .carousel-inner {
+    overflow: hidden;
+    /* border: 1px solid red; */
+    padding: 15px;
+    
+}
+
+.carousel-container .track {
+    display: inline-flex;
+    transition: transform 0.3s;
+    gap: 15px;
+    
+
+}
+
+.carousel-container .card-container {
+    /*width: 259px; /* 1280 px/5 items -15px padding right */ 
+    /* width: calc(100% / 3); */
+    /* width: 259px; */
+    /* width: 100%; */
+    height: 450px;
+    flex-shrink: 0;
+    /* border: 1px solid #aaa; */
+    /*padding-right: 15px; /* maybe gap is better option*/
+    /* padding-right: 15px; */
+}
+
+.carousel-container .card-container .card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+
+
+
+.carousel-container .card-container .card:hover { 
+    transform: scale(1.05);
+}
+
+.carousel-nav button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-nav .prev {
+    left: -30px;
+    display: none;
+}
+
+.carousel-nav .prev.show {
+    display: block;
+}
+
+.carousel-nav .next {
+    right: -30px; /* left 30px and right 20? why*/
+}
+
+.carousel-nav .next.hide {
+    display: none;
+}
+
+.card > * {
+    flex: 1;
+}
+
+.card .card-img {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    font-size: 3rem;
+    height: 75%;
+}
+
+.card .info {
+    height: 25%;
+    /* flex-grow: 0;   */
+    padding: 10px;
+    background-color: var(--gray-color);
+    color: var(--secondary-color);
+    
+    font-size: 0.9rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card .info div {
+    margin: 0.1rem;
+}
+
+.card .info .card-title {
+    font-weight: bold;
+}
+
+.card .info .card-type {
+    background-color: var(--button-primary-color);
+    width: fit-content;
+    padding: 0.2rem 0.2rem;
+    border-radius: 1rem;
+}
+
+.card .info .card-author {
+
+}
+
+.card .info .card-price {
+    display: flex;
+    gap: 1rem;
+}
+
+.card .info .card-price .actual-price {
+    font-weight: bold;
+}
+
+.card .info .card-price .last-price {
+    text-decoration: line-through;
+}
+
+
+.main-carousel-container .carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) { 
+    .carousel-nav button {
+        width: 40px;
+        height: 40px;
+        
+    
+    }
+
+    .carousel-container .card-container {
+        height: 350px;
+    }
+
+    .carousel-container .card-container .info {
+
+    }
+
+    .carousel-nav .prev {
+        left: 0;
+    }
+    .carousel-nav .next {
+        right: 0;
+    }
+
+}

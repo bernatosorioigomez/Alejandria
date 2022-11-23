@@ -1,0 +1,22 @@
+[
+    {
+      "author": "Chinua Achebe",
+      "country": "Nigeria",
+      "imageLink": "https://imagessl8.casadellibro.com/a/l/t7/38/9788498726138.jpg",
+      "language": "English",
+      "link": "",
+      "pages": 209,
+      "title": "El Imperio Final",
+      "year": 1958
+    },
+    {
+      "author": "Hans Christian Andersen",
+      "country": "Denmark",
+      "imageLink": "images/fairy-tales.jpg",
+      "language": "Danish",
+      "link": "https://m.media-amazon.com/images/I/511PjVMPctL.jpg",
+      "pages": 784,
+      "title": "El Pozo de la Ascensión",
+      "year": 1836
+    }
+]

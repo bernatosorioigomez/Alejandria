@@ -1,0 +1,22 @@
+.layout {
+    padding-top: 13vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .layout {
+        padding-top: 9vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .layout {
+        padding-top: 20vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+}

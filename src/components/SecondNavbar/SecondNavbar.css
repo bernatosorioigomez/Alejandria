@@ -1,0 +1,39 @@
+.second-navbar {
+    /* padding-top: 8vh; */
+    /* height: 5vh; */
+    /* display: flex; */
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: var(--third-color);
+    font-size: 1rem;
+    top: 8vh;
+    height: 4vh;
+    z-index: 1;
+    
+}
+
+.second-navbar-categories {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+}
+
+.second-navbar-category {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.second-navbar-category:hover {
+    color: var(--button-primary-color);
+}
+
+@media screen and (max-width: 1050px) {
+    .second-navbar {
+        display: none;
+    }
+}
